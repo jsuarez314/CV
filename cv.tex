@@ -1,0 +1,211 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+%\setmainfont[
+%  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+%  BoldFont=LinLibertine_RB.otf,
+%  ItalicFont=LinLibertine_RI.otf,
+%  BoldItalicFont=LinLibertine_RBI.otf
+%]{LinLibertine_R.otf}
+%\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={John Suárez-Pérez - vita},
+	pdfauthor={John Suárez-Pérez},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE John Fredy Suárez Pérez}\\[1cm]
+Ph.D. Student of Science - Physics \\
+Bogotá, Colombia\\[.2cm]
+Phone: \texttt{ +57 3132843012 }\\
+Email: \href{mailto:jf.suarez@uniandes.edu.co}{jf.suarez@uniandes.edu.co}\\
+Website: \href{https://jsuarez314.gitlab.io}{https://jsuarez314.gitlab.io}
+%\textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\ 
+
+%%\hrule
+%\section*{Current position}
+%\emph{PhD Student}, Universidad de los Andes, Bogotá-Colombia,
+%PhD Student of Physics in the Universidad de los Andes, searching on quantum spectroscopy and quantum optics.
+
+%%\hrule
+\section*{Research Interest}
+ Teaching of physics, computational cosmology, quantum optics, machine learning.
+
+%\hrule
+\section*{Formal Education}
+\noindent
+\years{2018}\textsc{MSc} in Physics, “Control experimental de las correlaciones en frecuencia de pares de fotones para una fuente de fotones individuales anunciados", Universidad de los Andes - Bogotá, Colombia\\
+
+\years{2014}\textsc{Bachelor} in Physics,“Desarrollo de un aplicativo computacional para el estudio de circuitos con elementos memristivos", Universidad Distrital Francisco José de Caldas - Bogotá, Colombia\\
+
+
+\section*{Further Education}
+\noindent
+\years{2020}\textsc{MOOC}, “Applied Machine Learning in Python". University of Michigan. \href{https://coursera.org/share/620fe326f4cc26b1f4a9bf77690114ae}{Coursera.}\\
+
+\years{2019}\textsc{MOOC}, “Electrones en Acción: Electrónica y Arduinos para tus propios Inventos". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/W5M5CZ3XE557}{Coursera.}\\
+
+\years{2019}\textsc{MOOC}, “Introducción a la programación en Python I: Aprendiendo a programar con Python". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/8UEF5TUY6ACB}{Coursera.}\\
+
+\years{2019}\textsc{Visiting Researcher}. Max Planck Institute for Astrophyscis. Münich-Germany. {June 2019}\\
+
+%\hrule
+%\section*{Grants, honors \& awards}
+%\noindent
+%\years{1921}Nobel Prize in Physics, Nobel Foundation
+
+\section*{Publications and talks}
+
+\subsection*{Journal articles}
+\noindent
+\years{2020}Suárez-Pérez, John - Valencia, Alejandra - Nuñez, Mayerlin, “Characterization of spectrally filtered heralded single photons", \emph{Journal of the Optical Society of America B}, doi:\url{https://doi.org/10.1364/JOSAB.387118}
+\\
+
+\years{2018}Suárez-Pérez, John - Valencia, Alejandra - Nuñez, Mayerlin, “Control of the frequency correlations of entangled photons to produce a pure heralded single photon source", \emph{Latin America Optics and Photonics Conference Paper}, ISBN: 978-1-943580-49-1 \\
+
+\years{2014}Suárez, John - Luengas, Danyela, “Diseño de una propuesta pedagógica para la enseñanza alternativa de las ciencias naturales", \emph{Revista Góndola}, Memorias Evento Académico, ISSN-E 2346-4712 \\
+
+\subsection*{Events}
+\noindent
+\years{2019}Suárez-Pérez, John - Forero-Romero, Jaime, “Machine Learning to reconstruct the dark matter density fields from galaxy survey" - \emph{XVI Latin American Regional IAU Meeting}, Hotel de Antofagasta - Universidad de Antofagasta, Antofagasta-Chile , Speaker.\\
+
+\years{2019}Suárez-Pérez, John - Forero-Romero, Jaime, “Reconstructing the Universe with Machine Learning" - \emph{VI Congreso Colombiano de Astronomía y Astrofísica}, Parque Explora - Universidad de Antioquía, Medellín-Colombia , Speaker.\\
+
+\years{2019}Suárez-Pérez, John - Forero-Romero, Jaime, “Reconstructing the Universe with Machine Learning" - \emph{X Escuela de Física Matemática: Machine learning for quantum matter and technology}, Universidad de los Andes, Bogotá-Colombia , Speaker.\\
+
+\years{2019}Suárez-Pérez, John - Forero-Romero, Jaime, “Understanding the large scale dark matter distribution with machine learning
+algorithms"- \emph{1st CoCo meeting (Cosmología en Colombia)}, Universidad Antonio Nariño, Bogotá-Colombia , Speaker.\\
+
+\years{2019}Pellaton, Matthieu - Villabona-Monsalve, Juan Pablo - Suárez-Pérez, John - Valencia, Alejandra - Nuñez-Portela, Mayerlin, “Measuring entangled two photon absorption cross sections and controlling the frequency correlations of paired photons for spectroscopic applications." \emph{26th Central European Workshop on Quantum Optics}, Paderborn University, Paderborn-Germany, Speaker.\\
+
+\years{2018} Suárez-Pérez, John - Alvis, Elkin R.- Gonzaléz, Juan, González, María - Cuadrado, Marcela - Aguilera, Alejandra, Bermudez, Santiago - \emph{1st Joint Symposium in Optics: Topics on nonlinear phenomena}, Universidad Nacional - Universidad de los Andes, Bogotá-Colombia, Organizer.\\
+
+\years{2018} Suárez-Pérez, John - Valencia, Alejandra - Nuñez, Mayerlin, “Experimental control of the frequency correlations for pure heralded single photons.", \emph{IX Quantum Optics}, Cartagena-Colombia, Speaker.\\
+
+\years{2017} Suárez, John - Nuñez, Mayerlin - Valencia, Alejandra, “Measurement of the heralded efficiency and the purity of a heralded single photons source", \emph{XXVII Congreso Nacional de Física} , Sociedad Colombiana de Física, Cartagena-Colombia, Speaker.\\
+
+\years{2017} Suárez, John - Nuñez, Mayerlin - Valencia, Alejandra, “Experimental Control of Frequency Correlations of Entangled Photon Pairs", \emph{VI Quantum Information School and Workshop}, Sociedade Brasilera de Fisica, Paraty-Brasil, Speaker.\\
+
+\newpage
+
+\years{2016} Suárez, John - Eraso, Leidy - Valencia, Alejandra, “Construcción de un perfilador láser portable mediante la adaptación de una webcam al microordenador Raspberry Pi", \emph{XIX Semana de la Enseñanza de la Física}, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2016} Suárez, John - Buesaquillo, Victor - Nuñez, Mayerlín, “Study of the spectral properties of entangled photons", \emph{Light and Matter School }, Universidad de los Andes, Bogotá-Colombia, Speaker.\\
+
+\years{2014} Suárez, John, “Desarrollo y funcionamiento del Software Científico MEMCIRCUIT para el análisis de circuitos memristivos", \emph{XVII Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2014} Suárez, John - Luengas, Danyela, “Diseño de una propuesta pedagógica para la enseñanza alternativa de las ciencias naturales", \emph{XVII Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2013} Suárez, John, “Números pseudoaleatorios: Algoritmos de producción, evaluación de eficiencia, y aplicabilidad en el estudio de fenómenos físicos.", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2013} Suárez, John, “Estudio del problema de la aguja de Buffon para el cálculo de PI a través de un aplicativo computacional empleando la infraestructura de análisis de datos ROOT", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2013} Suárez, John - Vargas, Andrés, “Elementos conceptuales para abordar el uso de fotones polarizados para la distribución de claves criptográficas", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2013} Suárez, John, “Diseño e implementación de algoritmos en el paradigma de la programación orientada a objetos para la resolución de ODE's empleando la infraestructura de análisis de datos ROOT.", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, Speaker.\\
+
+\years{2013}Suárez, John, “Desarrollo de un aplicativo informático para el análisis y la visualización del comportamiento de un circuito con elementos memristivos", \emph{XXV Congreso Nacional de Física}, Universidad del Quíndio, Armenia-Colombia, Speaker.\\
+
+\years{2012} Suárez, John, \emph{XV Semana de la Enseñanza de la Física }, Bogotá-Colombia, Assistant.\\
+
+\subsection*{Technologies}
+\noindent
+\years{2014} Suárez, John - Castillo, Miguel - Salamanca, Julián, “Memcircuit", Software for the study of memristive circutis, \emph{Scientific Software}\\
+
+\section*{Researching}
+\noindent
+\years{2019}Research Assistant, Universidad de los Andes, Trasients Project: Localize Transient Astronomical Objects on image sequences.\\
+
+\section*{Teaching}
+\noindent
+\years{2019}Graduate Assistant, Universidad de los Andes, Basic Physics II\\
+
+\years{2018} Graduate Assistant, Universidad de los Andes, Physics II\\
+
+\years{2018} Graduate Assistant, Universidad de los Andes, Physics I\\
+
+\years{2018} Graduate Assistant, Universidad de los Andes, Physics I, Physics II, Modern Optics\\
+
+\years{2017} Graduate Assistant, Universidad de los Andes, Experimental Physics I, Laboratory of Basics Physics I\\
+
+\years{2016} Graduate Assistant, Universidad de los Andes, Experimental Physics I, Experimental Physics II\\
+
+\years{2015} Assistant Teacher, Universidad de los Andes, Experimental Physics I, Experimental Physics II\\
+
+\years{2013} Science Teacher, Escuela Pedagógica Experimental (EPE)\\
+
+
+%\hrule
+%\section*{Service to the profession}
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+%Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+%\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+%\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}
+}
+\end{center}
+\end{document}
