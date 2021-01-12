@@ -57,6 +57,27 @@
 \subsectionfont{\mdseries\scshape\normalsize} 
 \subsubsectionfont{\mdseries\upshape\large} 
 
+% SKILL SECTION
+\usepackage{tikz}
+\definecolor{frontColor}{RGB}{47,79,79}% dark g
+\definecolor{backColor}{RGB}{200,200,200}% grey
+\newcommand{\grade}[1]{%
+    \begin{tikzpicture}
+    \clip (1em-.4em,-.35em) rectangle (5em +.5em ,1em);
+    \foreach \x in {1,2,...,5}{
+        \path[{fill=backColor}] (\x em,0) circle (.35em);
+    }
+    \begin{scope}
+    \clip (1em-.4em,-.35em) rectangle (#1em +.5em ,1em);
+    \foreach \x in {1,2,...,5}{
+        \path[{fill=frontColor}] (\x em,0) circle (.35em);
+    }
+    \end{scope}
+
+    \end{tikzpicture}%
+}
+
+
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
 \usepackage[%dvipdfm, 
@@ -97,6 +118,8 @@ Computational Cosmology, Machine Learning, Teaching Physics, Quantum Optics.
 
 \section*{Further Education}
 \noindent
+\years{2021}\textsc{MOOC}, “Julia Scientific Programming". University of Cape Town. \href{https://coursera.org/share/faa0fcc877c44d0c38b6a2c4179818f2}{Coursera.}\\
+
 \years{2020}\textsc{MOOC}, “Applied Machine Learning in Python". University of Michigan. \href{https://coursera.org/share/620fe326f4cc26b1f4a9bf77690114ae}{Coursera.}\\
 
 \years{2019}\textsc{MOOC}, “Electrones en Acción: Electrónica y Arduinos para tus propios Inventos". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/W5M5CZ3XE557}{Coursera.}\\
@@ -205,6 +228,54 @@ algorithms"- \emph{1st CoCo meeting (Cosmología en Colombia)}, Universidad Anto
 
 \years{2013}Science Teacher, Escuela Pedagógica Experimental (EPE)\\
 
+\section*{Skills and Abilities}
+
+\subsection*{Software Development Skills}  
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{ll}
+Python: & \grade{5}  \\
+C++:& \grade{4.5}\\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{ll}
+Bash:& \grade{4}\\
+Julia: & \grade{3}
+\end{tabular}
+\end{minipage}
+
+
+\subsection*{Software Tools}  
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{ll}
+Visualization: & \grade{5}  \\
+\emph{matplotlib, gnuplot}\\
+Data Analysis:& \grade{5}\\
+\emph{numpy, scipy, pandas}\\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{ll}
+Machine Learning: & \grade{4}  \\
+\emph{sklearn, pytorch}\\
+Others: & \grade{3}\\
+\emph{git, make ...}
+\end{tabular}
+\end{minipage}
+
+
+\subsection*{Languages}  
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{ll}
+Spanish: & \grade{5}  \\
+English:& \grade{4}\\
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{ll}
+Esperanto: & \grade{3}\\
+\end{tabular}
+\end{minipage}
 
 %\hrule
 %\section*{Service to the profession}
