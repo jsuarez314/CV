@@ -13,18 +13,18 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[10pt, a4paper]{article}
-\usepackage{fontspec}
+\usepackage{fontspec} 
 
 % DOCUMENT LAYOUT
 \usepackage{geometry}
 \geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
-\setlength\parindent{0in}
+\setlength\parindent{0in}	
 
 % FONTS
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\usepackage{url}
+% \usepackage{url}
 
 \defaultfontfeatures{Mapping=tex-text}
 %\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
@@ -85,20 +85,19 @@ bookmarks, colorlinks, breaklinks,
 % ---- FILL IN HERE THE TITLE AND AUTHOR
 	pdftitle={John Suárez-Pérez - vita},
 	pdfauthor={John Suárez-Pérez},
-	pdfproducer={http://nitens.org/taraborelli/cvtex}
+	pdfproducer={https://jsuarez314.gitlab.io}
 ]{hyperref}  
-\usepackage[none]{hyphenat}
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
 
 % DOCUMENT
 \begin{document}
-{\LARGE John F. Suárez-Pérez}\\[1cm]
-Ph.D. in Science - Physics (Expected: July 2023) \\
-Bogotá, Colombia\\[.2cm]
-\texttt{ +57 3132843012 }
-\hspace{0.3cm}|\hspace{0.3cm}
-\href{mailto:jf.suarez@uniandes.edu.co}{jf.suarez@uniandes.edu.co}
-\hspace{0.3cm}|\hspace{0.3cm}
+{\LARGE John F. Suárez-Pérez}\\[0.5cm]
+Ph.D. in Science - Physics\\
+Bogotá, Colombia\\
+\href{mailto:jf.suarez@uniandes.edu.co}{jf.suarez@uniandes.edu.co}\\
++57 3132843012 \\[.2cm]
+
+|\hspace{0.3cm}
 \href{https://jsuarez314.gitlab.io}{Website}
 \hspace{0.3cm}|\hspace{0.3cm}
 \href{https://github.com/jsuarez314}{Github}
@@ -106,7 +105,10 @@ Bogotá, Colombia\\[.2cm]
 \href{
 https://ui.adsabs.harvard.edu/search/p_=0&q=\%20author\%3A\%22Su\%C3\%A1rez-P\%C3\%A9rez\%2C\%20John
 \%20F.\%22&sort=date\%20desc\%2C\%20bibcode\%20desc}{NASA/ADS}
-%\hrule
+\hspace{0.3cm}|\hspace{0.3cm}
+\href{https://scholar.google.com/citations?user=_Z9iT9sAAAAJ}{Google Scholar}\hspace{0.3cm}|
+
+%%\hrule
 %\section*{Current position}
 %\emph{PhD Student}, Universidad de los Andes, Bogotá-Colombia,
 %PhD Student of Physics in the Universidad de los Andes, searching on quantum spectroscopy and quantum optics.
@@ -114,25 +116,30 @@ https://ui.adsabs.harvard.edu/search/p_=0&q=\%20author\%3A\%22Su\%C3\%A1rez-P\%C
 %%\hrule
 \section*{Research Interests}
 \noindent
+\textsc{Data Science}\\
+Artificial Intelligence, Graph Algorithms, Data Mining.\\
+
 \textsc{Cosmology}\\
- Large-Scale Structure, Cosmic Web, Hydro-dynamical Simulations.\\
+Large Scale Structure, Cosmic Web, Hydro-dynamical Simulations.\\
 
 \textsc{Extra-galactic Astronomy}\\
-Bright Galaxies, Luminous Red Galaxies, Galaxy Evolution.\\
-
-\textsc{Data Science}\\
-Artificial Intelligence, Graph Algorithms, Data Mining.
+Bright Galaxies, Luminous Red Galaxies, Galaxy Evolution.
 
 %\hrule
 \section*{Formal Education}
 \noindent
-\years{2017}\textsc{M.Sc.} in Physics, Universidad de los Andes - Bogotá, Colombia, “Experimental 
+\years{2023}\textsc{Ph.D.} in Physics, Universidad de los Andes - Bogotá, Colombia, “Artificial 
+Intelligence in Astronomy: Machine Learning and Deep Learning Approaches to DESI Data".\\
+
+\years{2017}\textsc{M.Sc.} in Physics, Universidad de Los Andes - Bogot\'a, Colombia, “Experimental 
 Control of frequency correlations between photon pairs from an announced individual photons 
 source".\\
 
-\years{2014}\textsc{B.S.} in Physics, Universidad Distrital Francisco José de Caldas - 
-Bogotá, Colombia, “Computational software development for the study of circuits with memristive 
-elements".\\
+\years{2014}\textsc{B.S.} in Physics, Universidad Distrital Francisco José de Caldas - Bogotá, 
+Colombia, “Computational software development for the study of circuits with memristive elements".\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section*{Further Education}
@@ -144,6 +151,9 @@ elements".\\
 \years{2019}\textsc{MOOC}, “Electrones en Acción: Electrónica y Arduinos para tus propios Inventos". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/W5M5CZ3XE557}{Coursera.}\\
 
 \years{2019}\textsc{MOOC}, “Introducción a la programación en Python I: Aprendiendo a programar con Python". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/8UEF5TUY6ACB}{Coursera.}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section*{Invited Research Visits}
@@ -160,6 +170,10 @@ elements".\\
 \years{2014}\textbf{Honor distinction for excellence in graduation work.} Laureate Thesis Award. 
 Highest honor awarded for outstanding research work. Bachelor in Physics degree. Universidad 
 Distrital Francisco José de Caldas - Bogotá, Colombia.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \section*{Publications, Events and Technologies}
 
@@ -185,19 +199,24 @@ ApJ},
 
 \years{2020}\textbf{Suárez-Pérez, John} - Valencia, Alejandra - Nuñez, Mayerlin, “Characterization of spectrally filtered heralded single photons", \emph{Journal of the Optical Society of America B}, doi: \url{https://doi.org/10.1364/JOSAB.387118}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \subsection*{Events}
 \noindent
 \years{2023}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., “Assessing the quality of 
 massive spectroscopic surveys with unsupervised machine learning" - \emph{Machine Learning to 1D 
 Astronomical Dataset}, Remote - London, 
 United Kingdom, \textbf{Speaker}.\\
+\newpage
 
 \years{2022}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., “Assessing the quality of massive spectroscopic surveys with unsupervised machine learning" - \emph{XXXI IAUGA 2022}, In-Person - IAU, Busan, Republic of Korea - \textbf{Speaker}.\\
 
 \years{2022}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., DESI Team,  “Assessing the 
 quality of massive spectroscopic surveys with unsupervised machine learning“ - \emph{ESA/ESO SCIOPS 
 Workshop 2022}, Remote - Max Planck Institute, Garching-Munich, Germany - \textbf{Speaker}.\\
-\newpage
 
 \years{2021}\textbf{Suárez-Pérez, John} - Neira, Mauricio - Gómez, Catalina - Hernández Hoyos, Marcela - Arbeláez, Pablo - Forero-Romero, Jaime E., “TAO: Transient Astronomical Object Image Dataset" - \emph{Statistical Challenges in Modern Astronomy VII}, Remote - The Pennsylvania University - \textbf{Speaker}.\\
 
@@ -205,33 +224,55 @@ Workshop 2022}, Remote - Max Planck Institute, Garching-Munich, Germany - \textb
 
 \years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Machine Learning to reconstruct the dark matter density fields from galaxy survey" - \emph{XVI Latin American Regional IAU Meeting}. In-Person - IAU, Universidad de Antofagasta, Antofagasta, Chile - \textbf{Speaker}.\\
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \subsection*{Technologies}
 \noindent
 \years{2014}\textbf{Suárez, John} - Castillo, Miguel - Salamanca, Julián, “Memcircuit", Software for the study of memristive circutis, \emph{Scientific Software}, 1-2014-64122.\\
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section*{Researching}
 \noindent
-\years{2020-2023}Collaborator, \textit{ \href{https://www.desi.lbl.gov/}{Dark Energy Spectroscopic Instrument - DESI }} member collaborator, Galaxy and Quasars Physiscs, Anomaly Detection, Lyman $\alpha$ Working Groups.\\
+\years{2020-2024}Collaborator, \textit{ \href{https://www.desi.lbl.gov/}{Dark Energy Spectroscopic Instrument - DESI }} member collaborator, Data, Galaxy and Quasars Physiscs, Anomaly Detection Working Groups.\\
+
 \years{2019}\textsc{Research Assistant}. Universidad de Los Andes, Transients Project: Localize 
 Transient Astronomical Objects on image sequences.\\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section*{Teaching}
 \noindent
+\years{2023}\textsc{Adjunct Professor}. Fundación Universidad de América. Data Analytics, Big Data Analytics.\\
+
 \years{2018-2023}\textsc{Graduate Assistant Ph.D}. Universidad de Los Andes. Computer Vision,  
-Introduction to Data Science, Computational Methods, Physics I.\\
+Computational Methods, Introduction to Data Science, Physics I.\\
 
 \years{2016-2017}\textsc{Graduate Assistant M.Sc}. Universidad de Los Andes. Experimental Physics I, 
 Experimental Physics II, Basic Physics I Laboratory, Physics I,  Physics II,  Modern Optics.\\
+\newpage
 
 \years{2015-2015}\textsc{Adjunct Professor}. Universidad de Los Andes. Experimental Physics I,  
 Experimental Physics II.\\
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section*{Outreach}
 \noindent
 
-\years{2021-2023}\textsc{Member}, \textit{ \href{https://www.astroreca.org/en/committeementors}{ Red de Estudiantes Colombianos de Astronomía - RECA}}  mentorship program committee.  A program focused on guiding students in Colombia who are interested in becoming professional astronomers.\\
+\years{2021-2024}\textsc{Member}, \textit{ \href{https://www.astroreca.org/en/committeementors}{ 
+Red de Estudiantes Colombianos de Astronomía - RECA}}  mentorship program committee.  A program 
+focused on guiding students in Colombia who are interested in becoming professional astronomers.\\
 
-\years{2020-2021}\textsc{Editor and Tutor}, \textit{\href{https://github.com/michaelJwilson/desihigh}{DESI High: School of the Dark Universe}} initiative, a project of DESI members focusing on introducing DESI to high schoolers through introductory notebooks written in python.
+\years{2020-2021\\2023-2024}\textsc{Editor and Tutor}, \textit{\href{https://github.com/michaelJwilson/desihigh}{DESI High: School of the Dark Universe}} initiative, a project of DESI members focusing on introducing DESI to high schoolers through introductory notebooks written in python.
 
 \section*{Skills and Abilities}
 
@@ -291,8 +332,10 @@ Esperanto: & \grade{3}\\
 
 %\hrulefill
 \vspace{2cm}
-Scientists Prof. Jaime Forero-Romero (je.forero@uniandes.edu.co),  Prof. Shaun Cole\\ (shaun.cole@durham.ac.uk) and Prof. Cristiano Sabiu (csabiu@uos.ac.kr) have agreed to send reference letters for my application. Please do not hesitate to contact me should you require further information.
+Scientist Prof. Jaime Forero-Romero (je.forero@uniandes.edu.co) has agreed to send reference letters for my application. Please do not hesitate to contact me should you require further information.
 \vfill{}
+
+%  Prof. Shaun Cole\\ (shaun.cole@durham.ac.uk) and Prof. Cristiano Sabiu (csabiu@uos.ac.kr)
 
 \begin{center}
 {\scriptsize  Last updated: \today\- •\- 
