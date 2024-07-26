@@ -17,6 +17,7 @@
 
 % DOCUMENT LAYOUT
 \usepackage{geometry}
+\usepackage{multicol}
 \geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}	
 
@@ -73,7 +74,6 @@
         \path[{fill=frontColor}] (\x em,0) circle (.35em);
     }
     \end{scope}
-
     \end{tikzpicture}%
 }
 
@@ -91,22 +91,23 @@ bookmarks, colorlinks, breaklinks,
 
 % DOCUMENT
 \begin{document}
-{\LARGE John F. Suárez-Pérez}\\[0.5cm]
+
+\begin{multicols}{2}
+[
+{\LARGE John F. Suárez-Pérez}
+]
 Ph.D. in Science - Physics\\
 Bogotá, Colombia\\
 \href{mailto:jf.suarez@uniandes.edu.co}{jf.suarez@uniandes.edu.co}\\
-+57 3132843012 \\[.2cm]
++57 3132843012
 
-|\hspace{0.3cm}
-\href{https://jsuarez314.gitlab.io}{Website}
-\hspace{0.3cm}|\hspace{0.3cm}
-\href{https://github.com/jsuarez314}{Github}
-\hspace{0.3cm}|\hspace{0.3cm}
-\href{
-https://ui.adsabs.harvard.edu/search/p_=0&q=\%20author\%3A\%22Su\%C3\%A1rez-P\%C3\%A9rez\%2C\%20John
-\%20F.\%22&sort=date\%20desc\%2C\%20bibcode\%20desc}{NASA/ADS}
-\hspace{0.3cm}|\hspace{0.3cm}
-\href{https://scholar.google.com/citations?user=_Z9iT9sAAAAJ}{Google Scholar}\hspace{0.3cm}|
+\columnbreak
+
+\hspace{-1cm}| \href{https://jsuarez314.gitlab.io}{Website} 
+| \href{https://github.com/jsuarez314}{Github} 
+| \href{https://ui.adsabs.harvard.edu/search/p_=0&q=docs%28library\%2FtPHQMkBgTaC34Hcqfx7ZtQ%29)&sort=date\%20desc\%2C\%20bibcode\%20desc}{NASA/ADS} 
+| \href{https://scholar.google.com/citations?user=_Z9iT9sAAAAJ}{Google Scholar}|
+\end{multicols}
 
 %%\hrule
 %\section*{Current position}
@@ -115,77 +116,110 @@ https://ui.adsabs.harvard.edu/search/p_=0&q=\%20author\%3A\%22Su\%C3\%A1rez-P\%C
 
 %%\hrule
 \section*{Research Interests}
-\noindent
-\textsc{Artificial Intelligence and Data Science}\\
-Deep Learning, Computer Vision, Big Data.\\
+\begin{multicols}{2}
+\textsc{Data Science}\\
+Artificila Inteligence, Deep Learning, \\Computer Vision, Big Data.\\
+
+\columnbreak
 
 \textsc{Cosmology and Astronomy}\\
 Large Scale Structure, Cosmic Web, Galaxy Evolution.\\
+\end{multicols}
 
 %\hrule
 \section*{Formal Education}
-\noindent
-\years{2023}\textsc{Ph.D.} in Physics, Universidad de los Andes - Bogotá, Colombia, “Artificial 
-Intelligence in Astronomy: Machine Learning and Deep Learning Approaches to DESI Data".\\
+\years{2018.01 2023.08}\textsc{Ph.D.} in Physics, Universidad de los Andes - Bogotá, Colombia, “Artificial 
+Intelligence in Astronomy: Machine Learning and Deep Learning Approaches to DESI Data". Advisor: Jaime Forero-Romero.\\
 
-\years{2017}\textsc{M.Sc.} in Physics, Universidad de Los Andes - Bogot\'a, Colombia, “Experimental 
-Control of frequency correlations between photon pairs from an announced individual photons 
-source".\\
+\years{2015.01 2017.11}\textsc{M.Sc.} in Physics, Universidad de Los Andes - Bogot\'a, Colombia, “Experimental 
+Control of frequency correlations between photon pairs from an announced individual photons source". Advisor: Mayerlín Nuñez Portela.\\
 
-\years{2014}\textsc{B.S.} in Physics, Universidad Distrital Francisco José de Caldas - Bogotá, 
-Colombia, “Computational software development for the study of circuits with memristive elements".\\
+\years{2008.02 2014.11}\textsc{B.S.} in Physics, Universidad Distrital Francisco José de Caldas - Bogotá, Colombia, “Computational software development for the study of circuits with memristive elements". Advisor: Julian Salamanca Bernal.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Research Experience}
+\years{2019.07 2019.12}Research Assistant, Universidad de Los Andes, Transients Project: Localize Transient 
+Astronomical Objects on image sequences.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section*{Teaching}
+\years{2023.09 Present}\textsc{Adjunct Professor}. Fundación Universidad de América. Data Analytics, Big Data Analytics.\\
 
-\section*{Further Education}
-\noindent
-\years{2021}\textsc{MOOC}, “Julia Scientific Programming". University of Cape Town. \href{https://coursera.org/share/faa0fcc877c44d0c38b6a2c4179818f2}{Coursera.}\\
+\years{2018.01 2023.08}\textsc{Graduate Assistant Ph.D}. Universidad de Los Andes. Computer Vision,  
+Computational Methods, Introduction to Data Science, Physics I.\\
 
-\years{2020}\textsc{MOOC}, “Applied Machine Learning in Python". University of Michigan. \href{https://coursera.org/share/620fe326f4cc26b1f4a9bf77690114ae}{Coursera.}\\
+\years{2016.01 2017.11}\textsc{Graduate Assistant M.Sc}. Universidad de Los Andes. Experimental Physics I, 
+Experimental Physics II, Basic Physics I Laboratory, Physics I,  Physics II,  Modern Optics.\\
+\newpage
 
-\years{2019}\textsc{MOOC}, “Electrones en Acción: Electrónica y Arduinos para tus propios Inventos". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/W5M5CZ3XE557}{Coursera.}\\
+\years{2015.01 2015.11}\textsc{Adjunct Professor}. Universidad de Los Andes. Experimental Physics I,  
+Experimental Physics II.
 
-\years{2019}\textsc{MOOC}, “Introducción a la programación en Python I: Aprendiendo a programar con Python". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/8UEF5TUY6ACB}{Coursera.}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Collaborations}
+\years{2020.04 Present}\textsc{Member}, \textit{ \href{https://www.desi.lbl.gov/}{Dark Energy Spectroscopic 
+Instrument - DESI }} member collaborator. Data, Galaxy and Quasars Physics, and Anomaly Detection Working Groups.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section*{Further Education}
+%\noindent
+%\years{2021}\textsc{MOOC}, “Julia Scientific Programming". University of Cape Town. \href{https://coursera.org/share/faa0fcc877c44d0c38b6a2c4179818f2}{Coursera.}\\
+
+%\years{2020}\textsc{MOOC}, “Applied Machine Learning in Python". University of Michigan. \href{https://coursera.org/share/620fe326f4cc26b1f4a9bf77690114ae}{Coursera.}\\
+
+%\years{2019}\textsc{MOOC}, “Electrones en Acción: Electrónica y Arduinos para tus propios Inventos". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/W5M5CZ3XE557}{Coursera.}\\
+
+%\years{2019}\textsc{MOOC}, “Introducción a la programación en Python I: Aprendiendo a programar con Python". Pontificia Universidad Católica de Chile. \href{https://www.coursera.org/account/accomplishments/certificate/8UEF5TUY6ACB}{Coursera.}\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section*{Outreach}
+
+\years{2021.05 Present}\textsc{Member}, \textit{ \href{https://www.astroreca.org/en/committeementors}{ 
+Red de Estudiantes Colombianos de Astronomía - RECA}}  mentorship program committee.  A program 
+focused on guiding students in Colombia who are interested in becoming professional astronomers.\\
+
+\years{2020.04 2021.12\\ \\2023.05 Present}\textsc{Editor and Tutor}, \textit{\href{https://github.com/michaelJwilson/desihigh}{DESI High: School of the Dark Universe}} initiative of the Educational and Public Outreach (EPO) working group, a project of DESI members focusing on introducing DESI to high schoolers through introductory notebooks in Google Colab written in Python Language.
 
 \section*{Invited Research Visits}
-\noindent
-\years{2022}\textsc{Visiting Researcher}. Natural Science Research Institute, University of Seoul. Seoul-Republic of Korea. {August-October}.\\
+\years{2022.08 2022.11}\textsc{Visiting Researcher}. Natural Science Research Institute, University of Seoul. Seoul, Republic of Korea.\\
 
-\years{2022}\textsc{Visiting Researcher}. Institute of Computational Cosmology, Durham University. Durham-UK. {June-July}.\\
+\years{2022.06 2022.07}\textsc{Visiting Researcher}. Institute of Computational Cosmology, Durham University. Durham, UK.\\
 
-\years{2019}\textsc{Visiting Researcher}. Max Planck Institute for Astrophysics. Munich-Germany. 
+\years{2019.06}\textsc{Visiting Researcher}. Max Planck Institute for Astrophysics. Munich, Germany. 
 {June}.\\
 
 \section*{Honors and Awards}
-\noindent
 \years{2014}\textbf{Honor distinction for excellence in graduation work.} Laureate Thesis Award. 
 Highest honor awarded for outstanding research work. Bachelor in Physics degree. Universidad 
 Distrital Francisco José de Caldas - Bogotá, Colombia.
 
 
+\section*{Software Development}
+\noindent
+\years{2014}\textbf{Suárez, John} - Castillo, Miguel - Salamanca, Julián, “Memcircuit", Software for 
+the study of memristive circuits, \emph{Scientific Software}, 1-2014-64122.\\
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section*{Publications}
 
-
-\section*{Publications, Events and Technologies}
-
-\subsection*{Journal articles}
 \noindent
-\years{2023}DESI Collaboration - Adame, A.G.- Aguilar, J. - \textbf{et.al.}, “The Early Data Release 
-of the Dark Energy Spectroscopic Instrument", \emph{The Astronomical Journal - AJ}, 
-\url{https://arxiv.org/abs/2306.06308} 
-\\
-
-\years{2023}DESI Collaboration - Adame, A.G.- Aguilar, J. - \textbf{et.al.}, “Validation of the 
+\years{2024}DESI Collaboration - Adame, A.G.- Aguilar, J. - \textbf{et.al.}, “Validation of the 
 Scientific Program for the Dark Energy Spectroscopic Instrument", \emph{The Astronomical Journal - 
 AJ}, 
 \url{https://arxiv.org/abs/2306.06307} 
+\\
+
+\years{2023}DESI Collaboration - Adame, A.G.- Aguilar, J. - \textbf{et.al.}, “The Early Data Release 
+of the Dark Energy Spectroscopic Instrument", \emph{The Astronomical Journal - AJ (Submitted)},
+\url{https://arxiv.org/abs/2306.06308} 
 \\
 
 \years{2021}\textbf{Suárez-Pérez, John F.} - Camargo, Yeimy D. - Xiao-Dong, Li; Forero-Romero, 
@@ -202,114 +236,61 @@ Journal - ApJ}, \url{https://iopscience.iop.org/article/10.3847/1538-4357/ac1fed
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection*{Events}
+\section*{Selected Talks}
 \noindent
-\years{2023}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., “Assessing the quality of 
-massive spectroscopic surveys with unsupervised machine learning" - \emph{Machine Learning to 1D 
-Astronomical Dataset}, Remote - London, United Kingdom, \textbf{Speaker}.\\
+% \years{2023}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., “Assessing the quality of massive spectroscopic surveys with unsupervised machine learning" - \emph{Machine Learning to 1D Astronomical Dataset}, Remote - London, United Kingdom, \textbf{Speaker}.\\
 
 \years{2022}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., “Assessing the quality of massive spectroscopic surveys with unsupervised machine learning" - \emph{XXXI IAUGA 2022},  Busan, Republic of Korea, \textbf{Speaker}.\\
-\newpage
 
-\years{2022}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., DESI Team, “Assessing the quality of massive spectroscopic surveys with unsupervised machine learning" - \emph{ESA/ESO SCIOPS Workshop 2022}, Remote - Max Planck Institute, Garching-Munich, Germany, \textbf{Speaker}.\\
+%\years{2022}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime E., DESI Team, “Assessing the quality of massive spectroscopic surveys with unsupervised machine learning" - \emph{ESA/ESO SCIOPS Workshop 2022}, Remote - Max Planck Institute, Garching-Munich, Germany, \textbf{Speaker}.\\
 
 \years{2021}\textbf{Suárez-Pérez, John} - Neira, Mauricio - Gómez, Catalina - Hernández Hoyos, Marcela - Arbeláez, Pablo - Forero-Romero, Jaime E., “TAO: Transient Astronomical Object Image Dataset" - \emph{Statistical Challenges in Modern Astronomy VII}, Remote - The Pennsylvania, United States, \textbf{Speaker}.\\ 
 
-\years{2020}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Introducción al análisis de datos del Dark Energy Spectroscopic Instrument (DESI)" - \emph{XXIII Semana de la Enseñanza de la Física - SEF2020}, Remote - Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2020}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Introducción al análisis de datos del Dark Energy Spectroscopic Instrument (DESI)" - \emph{XXIII Semana de la Enseñanza de la Física - SEF2020}, Remote - Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
 \years{2020}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime - Camargo, Yeimy  Xiao, Dong-Li, “From the $\beta$-skeleton to cosmic web elements" - \emph{Latin American Workshop on Observational Cosmology}, Remote - ICTP-SAIFR, São Paulo-Brazil, \textbf{Speaker}.\\
 
-\years{2020}\textbf{Suárez-Pérez, John} - Valencia, Alejandra - Nuñez, Mayerlin, “Characterization of spectrally filtered heralded single photons", \emph{Q-Turn Workshop 2020}, Remote - IQOQI Vienna.\\
+%\years{2020}\textbf{Suárez-Pérez, John} - Valencia, Alejandra - Nuñez, Mayerlin, “Characterization of spectrally filtered heralded single photons", \emph{Q-Turn Workshop 2020}, Remote - IQOQI Vienna.\\
 
-\years{2020}\textbf{Suárez-Pérez, John}, \emph{I Encuentro Nacional de Enseñanza de la Ciencia para la Inclusión - ENECI}, Virtual - Universidad Distrital Francisco José de Caldas - Universidad Tecnológica de Pereira, Colombia, \textbf{Assistant}.\\
+%\years{2020}\textbf{Suárez-Pérez, John}, \emph{I Encuentro Nacional de Enseñanza de la Ciencia para la Inclusión - ENECI}, Virtual - Universidad Distrital Francisco José de Caldas - Universidad Tecnológica de Pereira, Colombia, \textbf{Assistant}.\\
 
-\years{2020}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime - Camargo, Yeimy  Xiao, Dong-Li, “From the $\beta$-skeleton to cosmic web elements" - \emph{2nd CoCo meeting (Cosmología en Colombia) }, Remote - Universidad Antonio Nariño, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2020}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime - Camargo, Yeimy  Xiao, Dong-Li, “From the $\beta$-skeleton to cosmic web elements" - \emph{2nd CoCo meeting (Cosmología en Colombia) }, Remote - Universidad Antonio Nariño, Bogotá-Colombia, \textbf{Speaker}.\\
 
 \years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Machine Learning to reconstruct the dark matter density fields from galaxy survey" - \emph{XVI Latin American Regional IAU Meeting}, Hotel de Antofagasta - Universidad de Antofagasta, Antofagasta-Chile, \textbf{Speaker}.\\
 
-\years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Reconstructing the Universe with Machine Learning" - \emph{VI Congreso Colombiano de Astronomía y Astrofísica}, Parque Explora - Universidad de Antioquía, Medellín-Colombia, \textbf{Speaker}.\\
+%\years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Reconstructing the Universe with Machine Learning" - \emph{VI Congreso Colombiano de Astronomía y Astrofísica}, Parque Explora - Universidad de Antioquía, Medellín-Colombia, \textbf{Speaker}.\\
 
-\years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Reconstructing the Universe with Machine Learning" - \emph{X Escuela de Física Matemática: Machine learning for quantum matter and technology}, Universidad de los Andes, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Reconstructing the Universe with Machine Learning" - \emph{X Escuela de Física Matemática: Machine learning for quantum matter and technology}, Universidad de los Andes, Bogotá-Colombia, \textbf{Speaker}.\\
 
-\years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Understanding the large scale dark matter distribution with machine learning algorithms"- \emph{1st CoCo meeting (Cosmología en Colombia)}, Universidad Antonio Nariño, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2019}\textbf{Suárez-Pérez, John} - Forero-Romero, Jaime, “Understanding the large scale dark matter distribution with machine learning algorithms"- \emph{1st CoCo meeting (Cosmología en Colombia)}, Universidad Antonio Nariño, Bogotá-Colombia, \textbf{Speaker}.\\
 
 %\years{2019}Pellaton, Matthieu - Villabona-Monsalve, Juan Pablo - \textbf{Suárez-Pérez, John} - Valencia, Alejandra - Nuñez-Portela, Mayerlin, “Measuring entangled two photon absorption cross sections and controlling the frequency correlations of paired photons for spectroscopic applications." \emph{26th Central European Workshop on Quantum Optics}, Paderborn University, Paderborn-Germany.\\
 
 \years{2018}\textbf{Suárez-Pérez, John} - Alvis, Elkin R.- Gonzaléz, Juan, González, María - Cuadrado, Marcela - Aguilera, Alejandra, Bermudez, Santiago - \emph{1st Joint Symposium in Optics: Topics on nonlinear phenomena}, Universidad Nacional - Universidad de los Andes, Bogotá-Colombia, \textbf{Organizer}.\\
-\newpage
 
-\years{2018}\textbf{Suárez-Pérez, John} - Valencia, Alejandra - Nuñez, Mayerlin, “Experimental control of the frequency correlations for pure heralded single photons", \emph{IX Quantum Optics}, Cartagena-Colombia, \textbf{Speaker}.\\
+%\years{2018}\textbf{Suárez-Pérez, John} - Valencia, Alejandra - Nuñez, Mayerlin, “Experimental control of the frequency correlations for pure heralded single photons", \emph{IX Quantum Optics}, Cartagena-Colombia, \textbf{Speaker}.\\
 
-% \years{2017}\textbf{Suárez, John} - Nuñez, Mayerlin - Valencia, Alejandra, “Measurement of the heralded efficiency and the purity of a heralded single photons source", \emph{XXVII Congreso Nacional de Física} , Sociedad Colombiana de Física, Cartagena-Colombia, \textbf{Speaker}.\\
+%\years{2017}\textbf{Suárez, John} - Nuñez, Mayerlin - Valencia, Alejandra, “Measurement of the heralded efficiency and the purity of a heralded single photons source", \emph{XXVII Congreso Nacional de Física} , Sociedad Colombiana de Física, Cartagena-Colombia, \textbf{Speaker}.\\
 
 \years{2017}\textbf{Suárez, John} - Nuñez, Mayerlin - Valencia, Alejandra, “Experimental Control of Frequency Correlations of Entangled Photon Pairs", \emph{VI Quantum Information School and Workshop}, Sociedade Brasilera de Fisica, Paraty-Brasil, \textbf{Speaker}.\\
 
-\years{2016}\textbf{Suárez, John} - Eraso, Leidy - Valencia, Alejandra, “Construcción de un perfilador láser portable mediante la adaptación de una webcam al microordenador Raspberry Pi", \emph{XIX Semana de la Enseñanza de la Física}, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2016}\textbf{Suárez, John} - Eraso, Leidy - Valencia, Alejandra, “Construcción de un perfilador láser portable mediante la adaptación de una webcam al microordenador Raspberry Pi", \emph{XIX Semana de la Enseñanza de la Física}, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
 %\years{2016}Buesaquillo, Victor - \textbf{Suárez, John} - Nuñez, Mayerlín, “Study of the spectral properties of entangled photons", \emph{Light and Matter School }, Universidad de los Andes, Bogotá-Colombia, \textbf{Speaker}.\\
 
-\years{2014}\textbf{Suárez, John}, “Desarrollo y funcionamiento del Software Científico MEMCIRCUIT para el análisis de circuitos memristivos", \emph{XVII Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2014}\textbf{Suárez, John}, “Desarrollo y funcionamiento del Software Científico MEMCIRCUIT para el análisis de circuitos memristivos", \emph{XVII Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
 %\years{2013}\textbf{Suárez, John}, “Números pseudoaleatorios: Algoritmos de producción, evaluación de eficiencia, y aplicabilidad en el estudio de fenómenos físicos.", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
 %\years{2013}\textbf{Suárez, John}, “Estudio del problema de la aguja de Buffon para el cálculo de PI a través de un aplicativo computacional empleando la infraestructura de análisis de datos ROOT", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
-\years{2013}Vargas, Andrés - \textbf{Suárez, John}, “Elementos conceptuales para abordar el uso de fotones polarizados para la distribución de claves criptográficas", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2013}Vargas, Andrés - \textbf{Suárez, John}, “Elementos conceptuales para abordar el uso de fotones polarizados para la distribución de claves criptográficas", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
-\years{2013}\textbf{Suárez, John}, “Diseño e implementación de algoritmos en el paradigma de la programación orientada a objetos para la resolución de ODE's empleando la infraestructura de análisis de datos ROOT.", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
+%\years{2013}\textbf{Suárez, John}, “Diseño e implementación de algoritmos en el paradigma de la programación orientada a objetos para la resolución de ODE's empleando la infraestructura de análisis de datos ROOT.", \emph{XVI Semana de la Enseñanza de la Física }, Universidad Distrital Francisco José de Caldas, Bogotá-Colombia, \textbf{Speaker}.\\
 
 %\years{2013}\textbf{Suárez, John}, “Desarrollo de un aplicativo informático para el análisis y la visualización del comportamiento de un circuito con elementos memristivos", \emph{XXV Congreso Nacional de Física}, Universidad del Quíndio, Armenia-Colombia, \textbf{Speaker}.\\
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\subsection*{Technologies}
-\noindent
-\years{2014}\textbf{Suárez, John} - Castillo, Miguel - Salamanca, Julián, “Memcircuit", Software for 
-the study of memristive circuits, \emph{Scientific Software}, 1-2014-64122.\\
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section*{Researching}
-\noindent
-\years{2020-2024}Collaborator, \textit{ \href{https://www.desi.lbl.gov/}{Dark Energy Spectroscopic 
-Instrument - DESI }} member collaborator, Data, Galaxy and Quasars Physics, Anomaly Detection Working Groups.\\
-
-\years{2019}Research Assistant, Universidad de Los Andes, Transients Project: Localize Transient 
-Astronomical Objects on image sequences.\\
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section*{Teaching}
-\noindent
-\years{2023-2024}\textsc{Adjunct Professor}. Fundación Universidad de América. Data Analytics, Big Data Analytics, Digital Transformation.\\
-\newpage
-
-\years{2018-2023}\textsc{Graduate Assistant Ph.D}. Universidad de Los Andes. Computer Vision,  
-Computational Methods, Introduction to Data Science, Physics I.\\
-
-\years{2016-2017}\textsc{Graduate Assistant M.Sc}. Universidad de Los Andes. Experimental Physics I, 
-Experimental Physics II, Basic Physics I Laboratory, Physics I,  Physics II,  Modern Optics.\\
-
-\years{2015-2015}\textsc{Adjunct Professor}. Universidad de Los Andes. Experimental Physics I,  
-Experimental Physics II.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section*{Outreach}
-\noindent
-
-\years{2021-2024}\textsc{Member}, \textit{ \href{https://www.astroreca.org/en/committeementors}{ 
-Red de Estudiantes Colombianos de Astronomía - RECA}}  mentorship program committee.  A program 
-focused on guiding students in Colombia who are interested in becoming professional astronomers.\\
-
-\years{2020-2021\\2023-2024}\textsc{Editor and Tutor}, \textit{\href{https://github.com/michaelJwilson/desihigh}{DESI High: School of the Dark Universe}} initiative, a project of DESI members focusing on introducing DESI to high schoolers through introductory notebooks written in python.
 
 \section*{Skills and Abilities}
 
